@@ -1,5 +1,5 @@
 const TEXT_VALUE = document.querySelector('.inputString');
-const button = document.querySelector('.button');
+const BUTTON = document.querySelector('.button');
 const DATA = [{
         name: 'Jhon Walker',
         birthDate: '1995-12-17',
@@ -54,7 +54,7 @@ function keyEnter(e) {
     }
 }
 TEXT_VALUE.addEventListener('keydown', keyEnter);
-button.addEventListener('click', function() {
+BUTTON.addEventListener('click', function() {
     console.log(searchByName(TEXT_VALUE));
     console.log(getBiggestAge());
     TEXT_VALUE.value = '';
