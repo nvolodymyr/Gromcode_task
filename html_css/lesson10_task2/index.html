@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        header {
+            height: 40px;
+            background-color: yellow;
+            display: flex;
+            align-items: center;
+        }
+        
+        header>ul {
+            margin: 0;
+            display: flex;
+            list-style-type: none;
+        }
+        
+        header>ul>li {
+            margin: 16px;
+        }
+        
+        main {
+            flex-grow: 1;
+            display: flex;
+        }
+        
+        section {
+            display: flex;
+            flex-grow: 1;
+            background-color: pink;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        aside {
+            width: 200px;
+            background-color: grey;
+        }
+        
+        footer {
+            height: 40px;
+            background-color: green;
+            display: flex;
+        }
+        
+        span {
+            margin: auto;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li>About</li>
+            <li>Products</li>
+            <li>Constacts</li>
+        </ul>
+    </header>
+    <main>
+        <section>
+            <h2>I can use Flexbox!!!</h2>
+        </section>
+        <aside>
+            <h2>News</h2>
+            <ul>
+                <li>News1</li>
+                <li>News2</li>
+                <li>News3</li>
+            </ul>
+        </aside>
+    </main>
+    <footer><span>Footer</span></footer>
+</body>
+
+</html>
