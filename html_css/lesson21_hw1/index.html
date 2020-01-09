@@ -2,128 +2,95 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
     <style>
         * {
             box-sizing: border-box;
-            margin: 0px;
         }
         
         html {
             font-family: Verdana;
             color: #555;
             font-size: 16px;
-            /* width: 100%; */
         }
         
         header {
             background: linear-gradient(60deg, red, orange);
-        }
-        
-        h1 {
             text-align: center;
-            background-color: #fff;
             color: white;
-            background: linear-gradient(60deg, red, orange);
-        }
-        
-        footer {
-            background: #e5e5e5;
-            padding: 0.5em;
-            text-align: center;
         }
         
         body {
-            height: 100vh;
             display: flex;
             flex-direction: column;
+            justify-content: space-between;
+            height: 100vh;
         }
         
-        main {
-            display: flex;
-            justify-content: center;
-            flex-grow: 1;
+        .footer {
+            text-align: center;
+            padding: 0.5em;
+            background-color: #e5e5e5;
         }
         
-        nav,
-        section,
-        aside {
-            padding: 0 0.5em;
+        .navigation,
+        .section,
+        .news {
+            padding: 0.5em;
         }
         
-        nav,
-        aside {
+        .navigation {
             width: 20%;
         }
         
-        section {
+        .section {
             width: 60%;
             font-size: 1.25em;
         }
         
-        .units-list {
-            width: 80%;
-            line-height: 1.75em;
-            margin: auto;
+        .news {
+            width: 20%;
         }
         
-        .css-units {
-            color: #8b0000;
-            background-color: #e5e5e5;
-            font-size: 1.125rem;
-            font-weight: 700;
+        .nav-list {
+            padding: 0;
+            list-style-type: none;
+        }
+        
+        .nav-list-item {
+            display: flex;
+            height: 2em;
+            align-items: center;
+            background-color: #808080;
+            margin: 0.5em 0;
+        }
+        
+        .units-list {
+            line-height: 1.75em;
+        }
+        
+        .nav-list-link {
+            margin: 0.5em;
+            color: white;
+            text-decoration: none;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        
+        .main {
+            display: flex;
+            justify-content: center;
+            flex-grow: 1;
+            width: 100vw;
         }
         
         .section__header {
             text-align: center;
             font-size: 5vw;
-        }
-        
-        .navigation {
-            padding: 0;
-        }
-        
-        .navigation li {
-            list-style-type: none;
-        }
-        
-        .navigation li {
-            background-color: #808080;
-            color: white;
-            height: 2em;
-            margin: 0.5em;
-            display: flex;
-        }
-        
-        .navigation li a {
-            display: block;
-            height: 100%;
-            text-decoration: none;
-            margin-left: 0.5em;
-            color: white;
-            text-overflow: ellipsis;
-            overflow: hidden;
-        }
-        
-        .navigation>ul>li {
-            display: flex;
-            justify-content: flex-start;
-            background: #808080;
-            height: 2em;
-            margin: 0.5em 0;
-            color: white;
-        }
-        
-        .nav-list-link {
-            text-decoration: none;
-            padding: 0.5em;
-            color: white;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            white-space: nowrap;
         }
     </style>
 </head>
@@ -134,28 +101,27 @@
     </header>
     <main class="main">
         <nav class="navigation">
-            <ul>
-                <li class="nav-list-item"><a class="nav-list-link" href="#">Responsive images</a></li>
-                <li class="nav-list-item"> <a class="nav-list-link" href="#">Mediaqueries</a></li>
-                <li class="nav-list-item"> <a class="nav-list-link" href="#">Flexbox</a></li>
-
+            <ul class="nav-list">
+                <li class="nav-list-item"><a href="#" class="nav-list-link">Responsive images</a></li>
+                <li class="nav-list-item"><a href="#" class="nav-list-link">Mediaqueries</a></li>
+                <li class="nav-list-item"><a href="#" class="nav-list-link">Flexbox</a></li>
             </ul>
         </nav>
         <section class="section">
             <h2 class="section__header">True story</h2>
             <p>There are few ways to define <code>font-size</code>:</p>
             <ul class="units-list">
-                <li><span class="css-units">px</span> are good if you need strict definition for a size of text. In other cases it is better to use relative units list below.</li>
+                <li><span class="css-units">px</span> are good if you need strict definition for a size of text. In other cases it is better to use relative units listed below.</li>
                 <li><span class="css-units">em</span> based on current font size</li>
                 <li><span class="css-units">rem</span> based on <code>&lt;html&gt;</code> font-size</li>
                 <li><span class="css-units">%</span> based on parent font size</li>
                 <li><span class="css-units">vh</span> (viewport height) based on screen height</li>
-                <li><span class="css-units">vw</span>(viewport width) based on screen width</li>
+                <li><span class="css-units">vw</span> (viewport width) based on screen width</li>
             </ul>
         </section>
         <aside class="news">
             <h2>Not a news</h2>
-            <p>A web page should look good on any device!</p>
+            <p>A web page should look good an any device!</p>
         </aside>
     </main>
     <footer class="footer">Welcome to the responsive world!</footer>
