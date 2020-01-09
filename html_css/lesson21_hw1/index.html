@@ -9,7 +9,6 @@
     <style>
         * {
             box-sizing: border-box;
-            margin: 0;
         }
         
         html {
@@ -24,80 +23,40 @@
         
         h1 {
             text-align: center;
+            background-color: #fff;
             color: white;
-        }
-        
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        
-        main {
-            display: flex;
-            flex-grow: 1;
-        }
-        
-        nav {
-            width: 20%;
-            padding: 0 0.5em;
-        }
-        
-        .navigation ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        
-        .navigation ul li {
-            background: #808080;
-            color: white;
-            height: 2em;
-            margin: 0.5em;
-            display: flex;
-        }
-        
-        a {
-            margin: auto 0;
-            display: block;
-            text-decoration: none;
-            color: white;
-            padding-left: 0.5em;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            white-space: nowrap;
-        }
-        
-        section {
-            width: 60%;
-            padding: 0 0.5em;
-            font-size: 1.25em;
-        }
-        
-        section .units-list {
-            line-height: 1.75em;
-        }
-        
-        aside {
-            width: 20%;
-            padding: 0 0.5em;
-        }
-        
-        .css-units {
-            color: #8b0000;
-            background: #e5e5e5;
-            font-size: 1.125em;
-            font-weight: 700;
-        }
-        
-        .section__header {
-            font-size: 5vw;
-            text-align: center;
+            background: linear-gradient(60deg, red, orange);
         }
         
         footer {
             background: #e5e5e5;
             padding: 0.5em;
             text-align: center;
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        main {
+            width: 100%;
+            max-width: 1200px;
+        }
+        
+        nav,
+        section,
+        aside {
+            padding: 0 0.5em;
+        }
+        
+        nav,
+        aside {
+            width: 20%;
+        }
+        
+        section {
+            width: 80%;
         }
     </style>
 </head>
