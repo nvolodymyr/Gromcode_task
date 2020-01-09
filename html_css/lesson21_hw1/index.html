@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+        
+        html {
+            font-family: Verdana;
+            color: #555;
+            font-size: 16px;
+        }
+        
+        header {
+            background: linear-gradient(60deg, red, orange);
+        }
+        
+        h1 {
+            text-align: center;
+            color: white;
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        main {
+            display: flex;
+            flex-grow: 1;
+        }
+        
+        nav {
+            width: 20%;
+            padding: 0 0.5em;
+        }
+        
+        .navigation ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .navigation ul li {
+            background: #808080;
+            color: white;
+            height: 2em;
+            margin: 0.5em;
+        }
+        
+        a {
+            display: block;
+            text-decoration: none;
+            color: white;
+            padding-left: 0.5em;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        
+        section {
+            width: 60%;
+            padding: 0 0.5em;
+            font-size: 1.25em;
+        }
+        
+        section .units-list {
+            line-height: 1.75em;
+        }
+        
+        aside {
+            width: 20%;
+            padding: 0 0.5em;
+        }
+        
+        .css-units {
+            color: #8b0000;
+            background: #e5e5e5;
+            font-size: 1.125em;
+            font-weight: 700;
+        }
+        
+        .section__header {
+            font-size: 5%;
+            text-align: center;
+        }
+        
+        footer {
+            background: #e5e5e5;
+            padding: 0.5em;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Responsive website</h1>
+    </header>
+    <main class="main">
+        <nav class="navigation">
+            <ul>
+                <li class="nav-list-item"><a class="nav-list-link" href="#">Responsive images</a></li>
+                <li class="nav-list-item">
+                    <a class="nav-list-link" href="#">Mediaqueries</a></li>
+                <li class="nav-list-item">
+                    <a class="nav-list-link" href="#">Flexbox</a></li>
+            </ul>
+        </nav>
+        <section class="section">
+            <h2 class="section__header">True story</h2>
+            <p>There are few ways to define <code>font-size</code>:</p>
+            <ul class="units-list">
+                <li><span class="css-units">px</span> are good if you need strict definition for a size of text. In other cases it is better to use relative units list below.</li>
+                <li><span class="css-units">em</span> based on current font size</li>
+                <li><span class="css-units">rem</span> based on <code>&lt;html&gt;</code> font-size</li>
+                <li><span class="css-units">%</span> based on parent font size</li>
+                <li><span class="css-units">vh</span> (viewport height) based on screen height</li>
+                <li><span class="css-units">vw</span>(viewport width) based on screen width</li>
+            </ul>
+        </section>
+        <aside class="news">
+            <h2>Not a news</h2>
+            <p>A web page should look good on any device!</p>
+        </aside>
+    </main>
+    <footer class="footer">Welcome to the responsive world!</footer>
+</body>
+
+</html>
