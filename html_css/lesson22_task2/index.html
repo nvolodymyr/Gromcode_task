@@ -7,34 +7,39 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
+    <title>Document</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
+        
         .navigation {
             display: flex;
-            flex-grow: 1;
             min-height: 200px;
             background-color: #ff7f50;
+            flex-grow: 1;
         }
         
         .products-list {
             display: flex;
-            flex-grow: 1;
             min-height: 200px;
             background-color: #006400;
+            flex-grow: 1;
         }
         
         .news {
             display: flex;
-            flex-grow: 1;
             min-height: 200px;
             background-color: #0ff;
+            flex-grow: 1;
         }
         
         span {
             margin: auto;
+            font-family: Verdana;
+            text-transform: lowercase;
             padding: 8px;
             border-radius: 4px;
-            text-transform: lowercase;
-            font-family: Verdana;
             background-color: #faebd7;
         }
         
@@ -51,23 +56,26 @@
             }
         }
     </style>
-    <title>Document</title>
 </head>
 
-<span>
+<body>
     <main class="content">
         <section class="products">
             <div class="navigation">
                 <span>Navigation</span>
-</div>
-<div class="products-list">
-    <span>Products List</span>
-</div>
-</section>
-<div class="news">
-    <span>News</span>
-</div>
-</main>
-</span>
+            </div>
+
+            <div class="products-list">
+                <span>Products List</span>
+            </div>
+        </section>
+
+
+        <div class="news">
+            <span>News</span>
+        </div>
+    </main>
+
+</body>
 
 </html>
