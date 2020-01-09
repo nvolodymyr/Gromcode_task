@@ -8,110 +8,56 @@
     <link rel="stylesheet" href="style.css">
     <style>
         * {
+            margin: 0 auto;
+            padding: 0;
             box-sizing: border-box;
-            margin: 0px;
-        }
-        
-        html {
-            font-family: Verdana;
-            color: #555;
-            font-size: 16px;
-            /* width: 100%; */
-        }
-        
-        header {
-            background: linear-gradient(60deg, red, orange);
-        }
-        
-        h1 {
-            text-align: center;
-            background-color: #fff;
-            color: white;
-            background: linear-gradient(60deg, red, orange);
-        }
-        
-        footer {
-            background: #e5e5e5;
-            padding: 0.5em;
-            text-align: center;
         }
         
         body {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
+            max-width: 600px;
+            margin: 0 auto;
         }
         
-        main {
-            display: flex;
-            justify-content: center;
-            flex-grow: 1;
+        html {
+            font-family: Veranda;
+            color: #555;
+            font-size: 16px;
         }
         
-        nav,
-        section,
-        aside {
+        .header {
+            background: linear-gradient(60deg, red, orange);
+            color: white;
+        }
+        
+        .header>h1 {
+            text-align: center;
+            margin: 0;
+        }
+        
+        .main {
+            display: flex;
+        }
+        /* ------NAVIGATION--------- */
+        
+        .navigation {
+            width: 20%;
             padding: 0 0.5em;
         }
         
-        nav,
-        aside {
-            width: 20%;
-        }
-        
-        section {
-            width: 80%;
-            font-size: 1.25em;
-        }
-        
-        .units-list {
-            line-height: 1.75em;
-        }
-        
-        .css-units {
-            color: #8b0000;
-            background-color: #e5e5e5;
-            font-size: 1.125rem;
-            font-weight: 700;
-        }
-        
-        .section__header {
-            text-align: center;
-            font-size: 5vw;
-        }
-        
-        .navigation {
+        .navigation>ul {
+            list-style: none;
             padding: 0;
         }
         
-        .navigation li {
-            list-style-type: none;
-        }
-        
-        .navigation li {
-            background-color: #808080;
-            color: white;
-            height: 2em;
-            margin: 0.5em;
-            display: flex;
-        }
-        
-        .navigation li a {
-            display: block;
-            height: 100%;
-            text-decoration: none;
-            margin-left: 0.5em;
-            color: white;
-            text-overflow: ellipsis;
-            overflow: hidden;
-        }
-        
         .navigation>ul>li {
-            display: flex;
             background: #808080;
             height: 2em;
             margin: 0.5em 0;
+            line-height: 2em;
             color: white;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
         }
         
         .nav-list-link {
@@ -121,6 +67,35 @@
             text-overflow: ellipsis;
             overflow: hidden;
             white-space: nowrap;
+        }
+        /* ---------SECTION------------- */
+        
+        .section {
+            width: 60%;
+            padding: 0 0.5em;
+            font-size: 1.25em;
+        }
+        
+        .section__header {
+            font-size: 5vw;
+            text-align: center;
+        }
+        
+        .units-list {
+            line-height: 1.75em;
+        }
+        
+        .css-units {
+            color: #8b0000;
+            background: #e5e5e5;
+            font-weight: 700;
+            font-size: 1.125em;
+        }
+        /* -----------NEWS--------------- */
+        
+        .news {
+            width: 20%;
+            padding: 0 0.5em;
         }
     </style>
 </head>
