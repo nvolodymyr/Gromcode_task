@@ -15,6 +15,7 @@
             font-family: Verdana;
             color: #555;
             font-size: 16px;
+            height: 100vh;
         }
         
         header {
@@ -41,17 +42,15 @@
         .news {
             padding: 0.5em;
         }
-        
-        .navigation {
+        /* .navigation {
             width: 20%;
         }
         
         .news {
             width: 20%;
-        }
+        } */
         
         .section {
-            width: 60%;
             font-size: 1.25em;
         }
         
@@ -82,10 +81,7 @@
         }
         
         .main {
-            display: flex;
-            justify-content: center;
             flex-grow: 1;
-            width: 100vw;
         }
         
         .section__header {
@@ -108,8 +104,8 @@
         @media screen and (min-width: 600px) {
             .main {
                 display: flex;
-                align-content: flex-start;
                 flex-wrap: wrap;
+                align-content: center;
             }
             .navigation {
                 width: 20%;
@@ -130,41 +126,39 @@
     </style>
 </head>
 
-<body>
-    <header class="header">
-        <h1>Responsive website</h1>
-    </header>
-    <main class="main">
-        <nav class="navigation">
-            <ul class="nav-list">
-                <li class="nav-list-item"><a href="#" class="nav-list-link">Responsive images</a></li>
-                <li class="nav-list-item"><a href="#" class="nav-list-link">Mediaqueries</a></li>
-                <li class="nav-list-item"><a href="#" class="nav-list-link">Flexbox</a></li>
-            </ul>
-        </nav>
-        <section class="section">
-            <h2 class="section__header">True story</h2>
-            <picture class="section__img">
-                <source srcset="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson22/hw2/big.png" media="(min-width: 600px)">
-                <source srcset="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson22/hw2/small.png">
-                <img class="img" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson22/hw2/big.png" alt="img...">
-            </picture>
-            <p>There are few ways to define <code>font-size</code>:</p>
-            <ul class="units-list">
-                <li><span class="css-units">px</span> are good if you need strict definition for a size of text. In other cases it is better to use relative units listed below.</li>
-                <li><span class="css-units">em</span> based on current font size</li>
-                <li><span class="css-units">rem</span> based on <code>&lt;html&gt;</code> font-size</li>
-                <li><span class="css-units">%</span> based on parent font size</li>
-                <li><span class="css-units">vh</span> (viewport height) based on screen height</li>
-                <li><span class="css-units">vw</span> (viewport width) based on screen width</li>
-            </ul>
-        </section>
-        <aside class="news">
-            <h2>Not a news</h2>
-            <p>A web page should look good an any device!</p>
-        </aside>
-    </main>
-    <footer class="footer">Welcome to the responsive world!</footer>
-</body>
+<header class="header">
+    <h1>Responsive website</h1>
+</header>
+<main class="main">
+    <nav class="navigation">
+        <ul class="nav-list">
+            <li class="nav-list-item"><a href="#" class="nav-list-link">Responsive images</a></li>
+            <li class="nav-list-item"><a href="#" class="nav-list-link">Mediaqueries</a></li>
+            <li class="nav-list-item"><a href="#" class="nav-list-link">Flexbox</a></li>
+        </ul>
+    </nav>
+    <section class="section">
+        <h2 class="section__header">True story</h2>
+        <picture class="section__img">
+            <source srcset="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson22/hw2/big.png" media="(min-width: 600px)">
+            <source srcset="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson22/hw2/small.png">
+            <img class="img" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson22/hw2/big.png" alt="img...">
+        </picture>
+        <p>There are few ways to define <code>font-size</code>:</p>
+        <ul class="units-list">
+            <li><span class="css-units">px</span> are good if you need strict definition for a size of text. In other cases it is better to use relative units listed below.</li>
+            <li><span class="css-units">em</span> based on current font size</li>
+            <li><span class="css-units">rem</span> based on <code>&lt;html&gt;</code> font-size</li>
+            <li><span class="css-units">%</span> based on parent font size</li>
+            <li><span class="css-units">vh</span> (viewport height) based on screen height</li>
+            <li><span class="css-units">vw</span> (viewport width) based on screen width</li>
+        </ul>
+    </section>
+    <aside class="news">
+        <h2>Not a news</h2>
+        <p>A web page should look good an any device!</p>
+    </aside>
+</main>
+<footer class="footer">Welcome to the responsive world!</footer>
 
 </html>
