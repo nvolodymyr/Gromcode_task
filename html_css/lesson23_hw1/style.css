@@ -20,7 +20,6 @@
 }
 .menu__item_active {
   color: yellow;
-  position: relative;
 }
 .menu__item:hover {
   background-color: #9acd32;
