@@ -8,6 +8,50 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <style>
+        .navigation {
+            display: flex;
+            min-height: 200px;
+            background-color: #ff7f50;
+            flex-grow: 1;
+        }
+        
+        .products-list {
+            display: flex;
+            min-height: 200px;
+            background-color: #006400;
+            flex-grow: 1;
+        }
+        
+        .news {
+            display: flex;
+            min-height: 200px;
+            background-color: #0ff;
+            flex-grow: 1;
+        }
+        
+        span {
+            margin: auto;
+            font-family: Verdana;
+            text-transform: lowercase;
+            padding: 8px;
+            border-radius: 4px;
+            background-color: #faebd7;
+        }
+        
+        @media screen and (min-width: 600px) {
+            .products {
+                display: flex;
+                flex-grow: 2;
+            }
+        }
+        
+        @media screen and (min-width: 900px) {
+            .content {
+                display: flex;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -16,14 +60,17 @@
             <div class="navigation">
                 <span>Navigation</span>
             </div>
+
             <div class="products-list">
                 <span>Products List</span>
             </div>
         </section>
         <div class="news">
-            <span>News</span>
+            <span>News
+                </span>
         </div>
     </main>
+
 </body>
 
 </html>
