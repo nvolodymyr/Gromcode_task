@@ -12,7 +12,9 @@ body {
 .price-table {
   display: flex;
   justify-content: space-around;
-  width: 1170px; }
+  width: 1170px;
+  margin: 0;
+  padding: 0; }
 
 .price-card {
   display: flex;
@@ -25,7 +27,8 @@ body {
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.087466); }
   .price-card__title {
     text-align: center;
-    margin: 30px 140px 0px 140px; }
+    margin: 30px 140px 0px 140px;
+    height: 64px; }
   .price-card__title-header {
     font-style: normal;
     font-weight: bold;
@@ -43,7 +46,9 @@ body {
       font-weight: bold;
       font-size: 55px;
       line-height: 67px;
-      padding: 18px 0 19px; }
+      width: 160px;
+      height: 67px;
+      text-align: center; }
   .price-card__description {
     padding: 0;
     margin: 0;
@@ -57,7 +62,7 @@ body {
   .price-card__options-list {
     width: 380px;
     list-style-type: none;
-    margin: 0;
+    margin: 0px 0px 37px 0px;
     padding: 0; }
   .price-card__order-btn {
     display: flex;
@@ -72,10 +77,10 @@ body {
     text-transform: uppercase;
     line-height: 17px;
     text-align: center;
-    margin-top: 37px;
     margin-bottom: 42px;
     border-radius: 20px;
-    border: none; }
+    border: none;
+    color: white; }
 
 .price-card__item {
   display: flex;
@@ -93,6 +98,10 @@ body {
     height: 13px;
     width: 15px; }
   .price-card__item__text {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    height: 18px;
     margin-left: 21px;
     color: white; }
 
@@ -113,5 +122,25 @@ body {
   background-color: #EC632A; }
 .webshop .price-card__item_checkbox {
   background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png); }
+
+.popular {
+  position: relative;
+  overflow: hidden; }
+  .popular::before {
+    content: 'popular';
+    position: absolute;
+    height: 25px;
+    width: 147px;
+    right: -30px;
+    top: 30px;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    transform: rotate(45deg);
+    color: #FFFFFF;
+    background-color: #DC3F45; }
 
 /*# sourceMappingURL=style.css.map */

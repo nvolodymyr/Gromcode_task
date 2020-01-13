@@ -15,6 +15,8 @@ body {
     display: flex;
     justify-content: space-around;
     width: 1170px;
+    margin: 0;
+    padding: 0;
 }
 
 .price-card {
@@ -29,6 +31,7 @@ body {
     &__title {
         text-align: center;
         margin: 30px 140px 0px 140px;
+        height: 64px;
     }
     &__title-header {
         font-style: normal;
@@ -49,7 +52,10 @@ body {
             font-weight: bold;
             font-size: 55px;
             line-height: 67px;
-            padding: 18px 0 19px;
+            // padding: 18px 0 19px;
+            width: 160px;
+            height: 67px;
+            text-align: center;
         }
     }
     &__description {
@@ -66,7 +72,7 @@ body {
     &__options-list {
         width: 380px;
         list-style-type: none;
-        margin: 0;
+        margin: 0px 0px 37px 0px;
         padding: 0;
     }
     &__order-btn {
@@ -82,10 +88,10 @@ body {
         text-transform: uppercase;
         line-height: 17px;
         text-align: center;
-        margin-top: 37px;
         margin-bottom: 42px;
         border-radius: 20px;
         border: none;
+        color: white;
     }
 }
 
@@ -103,11 +109,14 @@ body {
         background: #2A343880;
     }
     &_checkbox {
-        // display: inline-block;
         height: 13px;
         width: 15px;
     }
     &__text {
+        margin: 0;
+        padding: 0;
+        width: 300px;
+        height: 18px;
         margin-left: 21px;
         color: white;
     }
@@ -140,5 +149,27 @@ body {
     }
     .price-card__item_checkbox {
         background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png);
+    }
+}
+
+.popular {
+    position: relative;
+    overflow: hidden;
+    &::before {
+        content: 'popular';
+        position: absolute;
+        height: 25px;
+        width: 147px;
+        right: -30px;
+        top: 30px;
+        font-size: 14px;
+        line-height: 25px;
+        font-weight: 700;
+        text-align: center;
+        vertical-align: middle;
+        text-transform: uppercase;
+        transform: rotate(45deg);
+        color: #FFFFFF;
+        background-color: #DC3F45;
     }
 }
