@@ -1,13 +1,13 @@
 * {
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: "Montserrat", sans-serif; }
 
 body {
   height: 100vh;
   display: flex;
   justify-content: center;
-  background-color: #141B1C;
-  margin-top: 111px; }
+  align-items: center;
+  background-color: black; }
 
 .price-table {
   display: flex;
@@ -23,6 +23,7 @@ body {
   flex-flow: column nowrap;
   align-items: center;
   width: 380px;
+  height: 770px;
   background-color: #334247;
   color: white;
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.087466); }
@@ -33,11 +34,12 @@ body {
   .price-card__title-header {
     font-size: 35px;
     line-height: 43px;
-    margin: 0; }
+    margin: 0;
+    font-style: normal;
+    font-weight: bold; }
   .price-card__title-subtitles {
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 24px; }
+    font-weight: 400;
+    margin: 0; }
   .price-card__price {
     display: flex;
     justify-content: center;
@@ -45,11 +47,12 @@ body {
     height: 104px;
     margin: 36px 0px 39px 0px; }
     .price-card__price span {
-      font-weight: 700;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
       font-size: 55px;
       line-height: 67px;
-      padding: 18px 0 19px;
-      width: 160px;
+      padding: 18px 110px 19px;
       height: 67px;
       text-align: center; }
   .price-card__description {
@@ -96,7 +99,7 @@ body {
   line-height: 18px;
   font-weight: 300; }
   .price-card__item:nth-child(odd) {
-    background: #2A343880; }
+    background: #2A3438; }
   .price-card__item_checkbox {
     height: 13px;
     width: 15px; }
@@ -143,7 +146,7 @@ body {
     vertical-align: middle;
     text-transform: uppercase;
     transform: rotate(45deg);
-    color: #FFFFFF;
+    color: white;
     background-color: #DC3F45; }
 
 /*# sourceMappingURL=style.css.map */

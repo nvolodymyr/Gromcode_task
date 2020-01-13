@@ -1,14 +1,15 @@
+@import 'variables.scss';
 * {
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $basic-fonts-family;
 }
 
 body {
     height: 100vh;
     display: flex;
     justify-content: center;
-    background-color: #141B1C;
-    margin-top: 111px;
+    align-items: center;
+    background-color: $body-color;
 }
 
 .price-table {
@@ -26,8 +27,8 @@ body {
     flex-flow: column nowrap;
     align-items: center;
     width: 380px;
-    // height: 770px;
-    background-color: #334247;
+    height: 770px;
+    background-color: $price-card-color;
     color: white;
     box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.087466);
     &__title {
@@ -39,11 +40,12 @@ body {
         font-size: 35px;
         line-height: 43px;
         margin: 0;
+        font-style: normal;
+        font-weight: bold;
     }
     &__title-subtitles {
-        font-size: 20px;
-        font-weight: 300;
-        line-height: 24px;
+        font-weight: 400;
+        margin: 0;
     }
     &__price {
         display: flex;
@@ -52,11 +54,12 @@ body {
         height: 104px;
         margin: 36px 0px 39px 0px;
         span {
-            font-weight: 700;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
             font-size: 55px;
             line-height: 67px;
-            padding: 18px 0 19px;
-            width: 160px;
+            padding: 18px 110px 19px;
             height: 67px;
             text-align: center;
         }
@@ -108,8 +111,9 @@ body {
     font-size: 15px;
     line-height: 18px;
     font-weight: 300;
+    // background: #1F3D63;
     &:nth-child(odd) {
-        background: #2A343880;
+        background: #2A3438;
     }
     &_checkbox {
         height: 13px;
@@ -128,7 +132,7 @@ body {
 .basic {
     .money-color,
     .btn-color {
-        background-color: #5BB189
+        background-color: $basic-green;
     }
     .price-card__item_checkbox {
         background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png);
@@ -138,7 +142,7 @@ body {
 .business {
     .money-color,
     .btn-color {
-        background-color: #3A6BA5
+        background-color: $business-blue;
     }
     .price-card__item_checkbox {
         background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png);
@@ -148,7 +152,7 @@ body {
 .webshop {
     .money-color,
     .btn-color {
-        background-color: #EC632A
+        background-color: $webshop-orange;
     }
     .price-card__item_checkbox {
         background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png);
@@ -172,7 +176,7 @@ body {
         vertical-align: middle;
         text-transform: uppercase;
         transform: rotate(45deg);
-        color: #FFFFFF;
+        color: white;
         background-color: #DC3F45;
     }
 }
