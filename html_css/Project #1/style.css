@@ -19,18 +19,99 @@ body {
   flex-flow: column nowrap;
   align-items: center;
   width: 380px;
+  height: 770px;
   background-color: #334247;
   color: white;
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.087466); }
   .price-card__title {
-    text-align: center; }
+    text-align: center;
+    margin: 30px 140px 0px 140px; }
   .price-card__title-header {
     font-style: normal;
     font-weight: bold;
     font-size: 35px;
     line-height: 43px;
-    text-align: center;
     color: #FFFFFF;
     margin: 0; }
+  .price-card__price {
+    display: flex;
+    justify-content: center;
+    width: 380px;
+    margin: 36px 0px 39px 0px; }
+    .price-card__price span {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 55px;
+      line-height: 67px;
+      padding: 18px 0 19px; }
+  .price-card__description {
+    padding: 0;
+    margin: 0;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    width: 327px;
+    margin-bottom: 42px; }
+  .price-card__options-list {
+    width: 380px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+  .price-card__order-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 155px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 17px;
+    text-align: center;
+    margin-top: 37px;
+    margin-bottom: 42px;
+    border-radius: 20px;
+    border: none; }
+
+.price-card__item {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  margin: 0px;
+  padding: 0px;
+  padding-left: 22px;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 300; }
+  .price-card__item:nth-child(odd) {
+    background: #2A343880; }
+  .price-card__item_checkbox {
+    height: 13px;
+    width: 15px; }
+  .price-card__item__text {
+    margin-left: 21px;
+    color: white; }
+
+.basic .money-color,
+.basic .btn-color {
+  background-color: #5BB189; }
+.basic .price-card__item_checkbox {
+  background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png); }
+
+.business .money-color,
+.business .btn-color {
+  background-color: #3A6BA5; }
+.business .price-card__item_checkbox {
+  background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png); }
+
+.webshop .money-color,
+.webshop .btn-color {
+  background-color: #EC632A; }
+.webshop .price-card__item_checkbox {
+  background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png); }
 
 /*# sourceMappingURL=style.css.map */
