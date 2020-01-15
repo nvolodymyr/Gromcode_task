@@ -57,4 +57,4 @@ console.log("null + 8: ", null + 8);
 undefined + '5';
 console.log("undefined + '5': ", undefined + '5');
 'text' + null;
-console.log("'text' + null: ", 'text' + null);
+console.log("'text' + null: ", 'text' + null); 
