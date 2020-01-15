@@ -5,9 +5,9 @@ console.log('+17: ', +17); +
 console.log("+'77': ", +'77');
 // Бинарный плюс складывает строки или прибавляет числа
 10 + '5';
-console.log("10+'5: ", 10 + '5');
+console.log("10+'5': ", 10 + '5');
 'some' + 'text';
-console.log("'some'+'text': ", 'some' + 'text');
+console.log("'some' + 'text': ", 'some' + 'text');
 
 // Математические операции с undefined возвращают NaN
 undefined + 1;
