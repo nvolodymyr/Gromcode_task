@@ -21,7 +21,7 @@ console.log("true && true && true: ", true && true && true);
 
 /* || находит первое истинное значение */
 'text' || false;
-console.log("'text' || false:", 'text' || false);
+console.log("'text' || false: ", 'text' || false);
 true || 'text';
 console.log("true || 'text': ", true || 'text');
 undefined || null || 0 || '' || null;
@@ -34,7 +34,7 @@ console.log("amount: ", amount);
 
 /* && находит первое ложное значение */
 'text' && false;
-console.log("'text' && false ", 'text' && false);
+console.log("'text' && false: ", 'text' && false);
 true && 'text';
 console.log("true && 'text': ", true && 'text');
 undefined && null && 0 && '' && null;
