@@ -2,6 +2,6 @@ let reverseArray = (arr) => {
     if (!Array.isArray(arr)) {
         return null;
     }
-
-    return [...arr.reverse()];
+    let [...newArray] = arr
+    return newArray.reverse();
 }
