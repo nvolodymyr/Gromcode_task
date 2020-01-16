@@ -1,5 +1,5 @@
-let m = 1;
-let n = 50;
+const m = 11;
+const n = 37;
 let result = 0;
 for (let i = m; i <= n; i++) {
     if ((i % 2 === 0) && (i % 4 !== 0)) {
@@ -13,4 +13,3 @@ for (let i = m; i <= n; i++) {
         console.log(i);
     }
 }
-console.log(result);
