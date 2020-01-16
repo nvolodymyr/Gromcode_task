@@ -8,5 +8,5 @@ let sum = (from, to) => {
 }
 
 function compareSums(a, b, c, d) {
-    return sum(a, b) > sum(c, d) ? 'true' : 'false';
+    return sum(a, b) > sum(c, d) ? true : false;
 }
