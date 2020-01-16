@@ -15,6 +15,6 @@ function uniqueCount(array) {
 
 
     }
-    return newArray;
+    return newArray.length;
 
 }
