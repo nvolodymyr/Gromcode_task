@@ -5,11 +5,11 @@ function checker(array) {
 
     for (let index = 0; index < array.length; index++) {
         if (array[index] > max) {
-            max = array[i];
+            max = array[index];
         }
         if (array[index] < min) {
             min = array[index];
         }
     }
-    return max + min > 1000 ? true : false;
+    return (max + min > 1000) ? true : false;
 }
