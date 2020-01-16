@@ -1,6 +1,6 @@
-const m = 11;
-const n = 37;
-const result = 0;
+let m = 11;
+let n = 37;
+let result = 0;
 for (let i = m; i <= n; i++) {
     if ((i % 2 === 0) && (i % 4 !== 0)) {
         result += i;
