@@ -1,4 +1,4 @@
-function uniqueCount(array) {
+function removeDuplicates(array) {
     if (!Array.isArray(array)) return null;
     let newArray = [];
     for (let i = 0; i < array.length; i++) {
