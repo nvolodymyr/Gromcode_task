@@ -12,4 +12,4 @@ const customers = {
     },
 
 };
-console.log(getCustomersList(customers));
+// console.log(getCustomersList(customers));
