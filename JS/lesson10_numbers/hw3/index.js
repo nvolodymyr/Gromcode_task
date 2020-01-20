@@ -4,6 +4,6 @@ let superRound = (numb, fraction) => {
         Math.floor(numb * transformFraction) / transformFraction,
         Math.round(numb * transformFraction) / transformFraction,
         Math.ceil(numb * transformFraction) / transformFraction,
-        Math.trunc(numb * transformFraction) / transformFraction, +elem.toFixed(fraction)
+        Math.trunc(numb * transformFraction) / transformFraction, +numb.toFixed(fraction)
     ]
 }
