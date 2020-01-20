@@ -1,4 +1,4 @@
-let superRoun = (numb, fraction) => {
+let superRound = (numb, fraction) => {
     let transformFraction = Math.pow(10, fraction);
     return [
         Math.floor(numb * transformFraction) / transformFraction,
