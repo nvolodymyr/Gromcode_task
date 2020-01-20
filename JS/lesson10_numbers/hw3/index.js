@@ -7,4 +7,3 @@ let superRoun = (numb, fraction) => {
         Math.trunc(elem * transformFraction) / transformFraction, +elem.toFixed(fraction)
     ]
 }
-d
