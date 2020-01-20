@@ -7,4 +7,3 @@ let getRandomNumbers = (lengArray, numberStart, numberFinish) => {
     }
     return newArray;
 }
-s
