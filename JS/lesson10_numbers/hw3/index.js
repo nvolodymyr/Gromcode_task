@@ -1,9 +1,9 @@
 let superRoun = (numb, fraction) => {
     let transformFraction = Math.pow(10, fraction);
     return [
-        Math.floor(elem * transformFraction) / transformFraction,
-        Math.round(elem * transformFraction) / transformFraction,
-        Math.ceil(elem * transformFraction) / transformFraction,
-        Math.trunc(elem * transformFraction) / transformFraction, +elem.toFixed(fraction)
+        Math.floor(numb * transformFraction) / transformFraction,
+        Math.round(numb * transformFraction) / transformFraction,
+        Math.ceil(numb * transformFraction) / transformFraction,
+        Math.trunc(numb * transformFraction) / transformFraction, +elem.toFixed(fraction)
     ]
 }
