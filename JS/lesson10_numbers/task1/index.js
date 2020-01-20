@@ -1,3 +1,1 @@
-let getFiniteNumbers = (arr) => {
-    return arr.filter(elem => Number.isFinite(elem));
-}
+let getFiniteNumbers = (arr) => arr.filter(elem => Number.isFinite(elem));
