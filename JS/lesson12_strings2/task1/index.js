@@ -18,6 +18,6 @@ let calc = str => {
                 break;
 
         }
-        return `${str}=${result}`;
+        return `${str} = ${result}`;
     }
     // console.log(calc('1+3'));
