@@ -21,3 +21,4 @@ let calc = str => {
         return `${str} = ${result}`;
     }
     // console.log(calc('1+3'));
+    //пробіл в дорівнює ск.
