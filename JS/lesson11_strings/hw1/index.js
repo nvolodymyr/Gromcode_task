@@ -1,12 +1,18 @@
-let sortContacts = (contasts, triger = true) => {
-    if (!Array.isArray(contasts)) return null;
-    const result = contasts.sort((a, b) => {
-        if (triger) {
-            return a.name.localeCompare(b.name)
-        } else {
-            return b.name.localeCompare(a.name)
-
+let splitStrin = (str, digits = 10) => {
+    if (typeof str !== 'string') return null;
+    const strArray = [];
+    let triger = 0;
+    while (true) {
+        let chunk = str.substr(triger, digits)
+        if (chunk.length === 0) {
+            break;
         }
-    })
-    return result;
+        if (chunk.length < digits) {
+            chunk = chunk + '.'.repeat(digits - chunk.length);
+        }
+        strArray.push(chunk);
+        triger += digits;
+
+    }
+    return strArray;
 }
