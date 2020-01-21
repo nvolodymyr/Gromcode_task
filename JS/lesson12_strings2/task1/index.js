@@ -1,21 +1,21 @@
 let calc = str => {
-        let a = str.split('');
+        const [a, operator, b] = expression.split(' ');
         let result;
-        switch (a[1]) {
+        switch (operator) {
             case '+':
-                result = +a[0] + a[2];
+                result = +a + +b;
                 break;
             case '-':
-                result = a[0] - a[2];
-                break
+                result = a - b
+                break;
 
             case '/':
-                result = a[0] / a[2];
-                break
+                result = a / b
+                break;
 
             case '*':
-                result = a[0] * a[2];
-                break
+                result = a * b;
+                break;
 
         }
         return `${str}=${result}`;
