@@ -1,4 +1,4 @@
-let splitStrin = (str, digits = 10) => {
+let splitString = (str, digits = 10) => {
     if (typeof str !== 'string') return null;
     const strArray = [];
     let triger = 0;
