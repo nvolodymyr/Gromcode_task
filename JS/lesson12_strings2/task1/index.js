@@ -1,5 +1,5 @@
 let calc = str => {
-        const [a, operator, b] = expression.split(' ');
+        const [a, operator, b] = str.split(' ');
         let result;
         switch (operator) {
             case '+':
