@@ -1,4 +1,4 @@
-import { calc } from './getMinSquaredNumber';
+import { calc } from './calculator';
 
 it('+', () => {
     let resultArray = calc('5 + 5');
