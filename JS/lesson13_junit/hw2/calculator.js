@@ -1,26 +1,27 @@
-export let calc = str => {
-    if (typeof str !== 'string') {
+export const calc = expression => {
+    if (typeof expression !== 'string') {
         return null;
     }
 
-    const [a, operator, b] = str.split(' ');
+    let [a, operation, b] = expression.split(' ');
     let result;
-    switch (operator) {
+    a = +a;
+    b = +b;
+
+    switch (operation) {
         case '+':
-            result = +a + +b;
+            result = a + b;
             break;
         case '-':
-            result = a - b
+            result = a - b;
             break;
-
-        case '/':
-            result = a / b
-            break;
-
         case '*':
             result = a * b;
             break;
-
+        case '/':
+            result = a / b;
+            break;
     }
-    return `${str} = ${result}`;
-}
+
+    return `${expression} = ${result}`;
+};
