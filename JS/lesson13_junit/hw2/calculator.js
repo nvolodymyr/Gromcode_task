@@ -3,7 +3,7 @@ export const calc = expression => {
         return null;
     }
 
-    let [a, operation, b] = expression.split(' ');
+    let [a, operation, b] = expression.split('');
     let result;
     a = +a;
     b = +b;
