@@ -9,7 +9,7 @@ export let createLogger = () => {
             });
         },
         error: text => {
-            memory.push({ message: text, dateTime: Date.now(), type: 'error' })
+            memory.push({ message: text, dateTime: new Date(), type: 'error' })
         },
         log: text => memory.push({ message: text, dateTime: Date.now(), type: 'log' }),
         getRecords: textOfType => {
