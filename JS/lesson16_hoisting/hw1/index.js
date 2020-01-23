@@ -1,8 +1,8 @@
   export let createArrayOfFunctions = n => {
           if (typeof n !== 'number') return null;
-          if (n === 'undefined') return [];
-          let newArray = new Array(n);
-          for (let index = 0; index < newArray.length; index++) {
+          if (n === 'undefined') return newArray;
+          let newArray = [];
+          for (let index = 0; index < n; index++) {
               newArray[index] = function() {
                   return index;
               }
