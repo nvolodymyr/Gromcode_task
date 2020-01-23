@@ -1,7 +1,7 @@
-let message = 'Just learn it!';
+let message = 'Just learn it';
 
 function sendMessage(name) {
-    console.log(`${name}, ${message} Your Gromcode`);
+    console.log(`${name}, ${message}! Your Gromcode`);
 }
 
 function setMessage(text) {
