@@ -8,7 +8,9 @@ export let createLogger = () => {
                 type: 'warn',
             });
         },
-        error: text => memory.push({ message: text, dateTime: Date.now(), type: 'error' }),
+        error: text => {
+            memory.push({ message: text, dateTime: Date.now(), type: 'error' })
+        },
         log: text => memory.push({ message: text, dateTime: Date.now(), type: 'log' }),
         getRecords: textOfType => {
             let resultArray = textOfType === undefined ? memory : memory.filter(elem => elem.type === textOfType);
