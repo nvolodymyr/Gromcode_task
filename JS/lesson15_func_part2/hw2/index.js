@@ -1,7 +1,13 @@
 export let createLogger = () => {
     let memory = [];
     return {
-        warn: text => memory.push({ message: text, dateTime: Date.now(), type: 'warn' }),
+        warn: function(text) {
+            memory.push({
+                message: text,
+                dateTime: new Date(),
+                type: 'warn',
+            });
+        },
         error: text => memory.push({ message: text, dateTime: Date.now(), type: 'error' }),
         log: text => memory.push({ message: text, dateTime: Date.now(), type: 'log' }),
         getRecords: textOfType => {
