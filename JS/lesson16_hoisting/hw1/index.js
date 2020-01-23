@@ -1,4 +1,4 @@
-  let createArrayOfFunctions = n => {
+  export let createArrayOfFunctions = n => {
           if (typeof n !== 'number') return null;
           if (typeof n == 'undefined') return [];
           let newArray = new Array(n);
