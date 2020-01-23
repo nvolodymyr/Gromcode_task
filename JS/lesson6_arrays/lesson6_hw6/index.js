@@ -1,14 +1,5 @@
-function withdraw(clients, balances, client, amount) {
-    if (!Array.isArray(clients)) return null;
-    if (!Array.isArray(balances)) return null;
-    for (let index = 0; index < clients.length; index++) {
-        if (clients[index] === client) {
-            if (balances[index] - amount >= 0) {
-                return balances[index] -= amount;
-            } else {
-                return -1;
-            }
-        }
-
-    }
+let withdraw = (clients, balances, client, amount) => {
+    if (!Array.isArray(clients) || !Array.isArray(balances)) return null;
+    let index = clients.indexOf(client);
+    return balances[index] - amount >= 0 ? balances[index] -= amount : -1;
 }
