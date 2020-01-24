@@ -5,6 +5,6 @@ export let callbackPrompt = {
         console.log(infoFromUser);
     },
     showDeferredPrompt(time) {
-        setTimeout(this.showPromt.bind(this), time);
+        setTimeout(this.showPrompt.bind(this), time);
     }
 }
