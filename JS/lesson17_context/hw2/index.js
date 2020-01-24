@@ -1,7 +1,7 @@
 export let timer = {
     secondsPassed: 0,
     minsPassed: 0,
-    timerInterval = 0,
+    timerInterval: 0,
     startTimer() {
         this.timerInterval = setInterval(() => {
             this.secondsPassed += 5;
