@@ -1,6 +1,6 @@
 export let callbackPrompt = {
     message: 'Tell me your number',
-    showPromt() {
+    showPrompt() {
         let infoFromUser = prompt(this.message);
         console.log(infoFromUser);
     },
