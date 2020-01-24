@@ -12,7 +12,7 @@ export let timer = {
         }, 5000);
     },
     getTime() {
-        return `${this.minsPassed}:${this.secondsPassed<10 ? '0'+this.secondsPassed:this.secondsPassed}`;
+        return `${this.minsPassed}:${this.secondsPassed < 10 ? '0' + this.secondsPassed : this.secondsPassed}`;
     },
     stopTimer() {
         clearInterval(this.timerInterval);
