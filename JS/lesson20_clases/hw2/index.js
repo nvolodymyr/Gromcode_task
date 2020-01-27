@@ -1,8 +1,8 @@
 export class User {
     constructor(id, name, sessionId) {
-        this._id = `${id}`;
-        this._name = `${name}`;
-        this._sessionId = `${sessionId}`;
+        this.id = `${id}`;
+        this.name = `${name}`;
+        this.sessionId = `${sessionId}`;
     }
 }
 export class UserRepository {
