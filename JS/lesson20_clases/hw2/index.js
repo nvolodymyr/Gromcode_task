@@ -16,8 +16,8 @@ export class User {
 
 }
 export class UserRepository {
-    constructor(users) {
-        this.users = Object.freeze(User);
+    constructor([User]) {
+        this.users = Object.freeze([User]);
     }
     get getUsers() {
         return this.users;
