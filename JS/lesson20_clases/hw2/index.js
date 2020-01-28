@@ -1,35 +1,35 @@
 export class User {
     constructor(id, name, sessionId) {
-        this.id = id;
-        this.name = name;
-        this.sessionId = sessionId;
+        this._id = id;
+        this._name = name;
+        this._sessionId = sessionId;
     }
-    get getId() {
-        return this.id;
+    get id() {
+        return this._id;
     }
-    get getname() {
-        return this.name;
+    get name() {
+        return this._name;
     }
-    get getsessionId() {
-        return this.sessionId;
+    get sessionId() {
+        return this._sessionId;
     }
 
 }
 export class UserRepository {
-    constructor([User]) {
-        this.users = Object.freeze([User]);
+    constructor(users) {
+        this._users = Object.freeze(users);
     }
-    get getUsers() {
-        return this.users;
+    get users() {
+        return this._users;
     }
     getUserNames() {
-        return this.users.map(({ name }) => name);
+        return this._users.map(({ _name }) => _name);
     }
     getUserIds() {
-        return this.users.map(({ id }) => id);
+        return this._users.map(({ _id }) => _id);
     }
     getUserNameById(userId) {
-        const user = this.users.find(({ id }) => id === userId);
-        return user ? user.name : null;
+        const user = this._users.find(({ _id }) => _id === userId);
+        return user ? user._name : null;
     }
 }
