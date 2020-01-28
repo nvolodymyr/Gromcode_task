@@ -4,6 +4,15 @@ export class User {
         this.name = name;
         this.sessionId = sessionId;
     }
+    get getId() {
+        return this.id;
+    }
+    get getname() {
+        return this.name;
+    }
+    get getsessionId() {
+        return this.sessionId;
+    }
 
 }
 export class UserRepository {
