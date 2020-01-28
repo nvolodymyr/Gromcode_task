@@ -17,11 +17,11 @@ export class User {
 }
 export class UserRepository {
     constructor(users) {
-        this._users = Object.freeze(users);
-    }
-    getUserNames() {
-        return this._users.map(({ name }) => name);
-    }
+            this._users = Object.freeze(users);
+        }
+        // getUserNames() {
+        //     return this._users.map(({ name }) => name);
+        // }
     getUserIds() {
         return this._users.map(({ id }) => id);
     }
