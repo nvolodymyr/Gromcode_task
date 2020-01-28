@@ -22,13 +22,13 @@ export class UserRepository {
     get getUsers() {
         return this.users;
     }
-    get getUserNames() {
+    getUserNames() {
         return this.users.map(({ name }) => name);
     }
-    get getUserIds() {
+    getUserIds() {
         return this.users.map(({ id }) => id);
     }
-    get getUserNameById(userId) {
+    getUserNameById(userId) {
         const user = this.users.find(({ id }) => id === userId);
         return user ? user.name : null;
     }
