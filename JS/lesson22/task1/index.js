@@ -31,9 +31,9 @@ attachBtn.addEventListener('click', function() {
     spanElem.addEventListener('click', logGreySpan, true);
     spanElem.addEventListener('click', logGreenSpan);
 });
-attachBtn.click();
+// attachBtn.click();
 
-removehBtn.click();
+
 removehBtn.addEventListener('click', function() {
     divElem.removeEventListener('click', logGreyDiv, true);
     divElem.removeEventListener('click', logGreenDiv);
@@ -42,6 +42,7 @@ removehBtn.addEventListener('click', function() {
     spanElem.removeEventListener('click', logGreySpan, true);
     spanElem.removeEventListener('click', logGreenSpan);
 });
+removehBtn.click();
 
 
 const clearAllEvents = () => {
