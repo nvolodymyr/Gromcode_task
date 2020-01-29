@@ -53,4 +53,4 @@ const clearAllEvents = () => {
 clearBtn.addEventListener('click', clearAllEvents);
 // let allBtn = document.querySelectorAll('.btn');
 // allBtn.forEach(elem => elem.click());
-spanElem.click();
+// spanElem.click();
