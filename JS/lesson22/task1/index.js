@@ -31,6 +31,7 @@ attachBtn.addEventListener('click', function() {
     spanElem.addEventListener('click', logGreySpan, true);
     spanElem.addEventListener('click', logGreenSpan);
 });
+attachBtn.click();
 
 
 removehBtn.addEventListener('click', function() {
@@ -41,6 +42,7 @@ removehBtn.addEventListener('click', function() {
     spanElem.removeEventListener('click', logGreySpan, true);
     spanElem.removeEventListener('click', logGreenSpan);
 });
+// removehBtn.click();
 
 const clearAllEvents = () => {
     const eventsListElem = document.querySelector('.events-list');
@@ -48,3 +50,6 @@ const clearAllEvents = () => {
 }
 
 clearBtn.addEventListener('click', clearAllEvents);
+// let allBtn = document.querySelectorAll('.btn');
+// allBtn.forEach(elem => elem.click());
+spanElem.click();
