@@ -1,7 +1,6 @@
 export let studentsBirthDays = (students) => {
-    let [newArrayOfStudents] = [...students];
-    return newArrayOfStudents
-        .sort((a, b) => a.birthDate > b.birthDate ? 1 : -1)
+    let newArrayOfStudents = [...students];
+    return newArrayOfStudents.sort((a, b) => a.birthDate > b.birthDate ? 1 : -1)
         .reduce((acumm, elem) => {
             let monthSortNameOfStudents = [];
             let nameMonthInDate = new Date(elem.birthDate).toString().split(' ')[1];
