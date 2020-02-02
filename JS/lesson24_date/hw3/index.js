@@ -57,6 +57,7 @@ function trigerCheckbox() {
     console.log(oneTask);
     console.log(this.checked);
     oneTask.done = this.checked;
+    oneTask.date = Date.now();
     renderListItems(tasks);
 }
 renderListItems(tasks);
